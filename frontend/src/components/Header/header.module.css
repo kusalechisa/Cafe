@@ -1,0 +1,148 @@
+.header {
+  background: white;
+  padding: 0;
+  border-bottom: 1px solid #e72929;
+  overflow: visible; /* Ensure dropdowns are not clipped */
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-weight: bold;
+  padding: 1rem;
+  text-decoration: none;
+  color: #af1313;
+}
+
+.nav {
+  display: flex;
+}
+
+.menuList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem {
+  position: relative;
+}
+
+.userLink {
+  display: block;
+  padding: 1rem;
+  color: #af1313;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.userLink:hover {
+  background: #09cbed;
+  color: white;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: whitesmoke;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: none;
+  min-width: 8rem;
+  z-index: 1000; /* Ensure it's above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for visibility */
+}
+
+.menuItem:hover .dropdownMenu {
+  display: block;
+}
+
+.dropdownLink,
+.logoutButton {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #af1313;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.dropdownLink:hover,
+.logoutButton:hover {
+  background: #e72929;
+  color: white;
+}
+
+.logoutButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.cartLink {
+  display: flex;
+  align-items: center;
+}
+
+.cartCount {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.1rem 0.45rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .menuItem a,
+  .menuItem button {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .menuList {
+    flex-direction: column;
+  }
+
+  .menuItem {
+    width: 100%;
+  }
+
+  .dropdownMenu {
+    position: static;
+    display: none;
+  }
+
+  .menuItem:hover .dropdownMenu {
+    display: block;
+  }
+
+  .cartCount {
+    font-size: 0.8rem;
+    padding: 0.1rem 0.3rem;
+  }
+}

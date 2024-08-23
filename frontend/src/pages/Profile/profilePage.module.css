@@ -1,0 +1,16 @@
+/* General Container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 3rem;
+  padding: 10px;
+}
+
+/* Details Section */
+.details {
+  width: 28rem;
+}
+
+ 

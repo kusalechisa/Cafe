@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px; /* Adjust the maximum width to fit your design */
+}
+
+.orderSection {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.summary h3 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.summary span {
+  font-size: 1.2rem;
+}
+
+.mapSection {
+  width: 100%;
+  max-width: 600px; /* Ensures the map section is aligned with other content */
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center; /* Centers the map within its container */
+}
+
+.buttonsContainer {
+  width: 100%;
+  max-width: 600px; /* Aligns with other sections */
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,62 @@
+/* search.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.searchImage {
+  width: 15.5rem; /* Set width for the image */
+  height: 15.5rem; /* Set height for the image */
+  margin-bottom: 0.5rem; /* Space between image and input */
+  border-radius: 0.5rem;
+  padding-bottom: 2rem;
+ }
+
+.searchInputContainer {
+  display: flex; /* Align input and button horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.searchInputContainer input {
+  border-radius: 10rem;
+  border: none;
+  height: 3rem;
+  width: 15rem;
+  background-color: #f1f1f1;
+  padding: 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+}
+
+.searchInputContainer button {
+  color: grey;
+  height: 3rem;
+  width: 5rem;
+  font-size: 1rem;
+  border-radius: 0 10rem 10rem 0;
+  border: none;
+  background-color: #e72929;
+  color: white;
+  opacity: 0.8;
+  outline: none;
+}
+
+.searchInputContainer button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.imagebg {
+  background-color: #f6f6f6;
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow effect */
+  border-radius: 8px; /* Optional: Adds rounded corners to the container */
+  margin-bottom: 2rem;
+}

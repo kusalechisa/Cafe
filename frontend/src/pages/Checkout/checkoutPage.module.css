@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  margin: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 40rem; /* Set a max-width for content */
+  margin-bottom: 2rem; /* Space below content */
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem; /* Space below inputs */
+}
+
+.mapContainer {
+  display: flex;
+  justify-content: center; /* Center the map horizontally */
+  width: 95%;
+  max-width: 40rem; /* Set a max-width for the map */
+  margin-bottom: 2rem; /* Space below map */
+}
+
+.buttons_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.buttons {
+  width: 100%;
+  max-width: 35rem; /* Set a max-width for buttons */
+}

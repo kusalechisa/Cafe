@@ -1,0 +1,63 @@
+/* Styles for the table container */
+.container {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* Styles for the table */
+.table {
+  display: none; /* Hide table on small screens */
+}
+
+/* Styles for card layout */
+.card {
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  color: grey;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .table {
+    font-size: 0.9rem;
+  }
+
+  .table td {
+    padding: 0.5rem;
+  }
+
+  .table td img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .table {
+    display: none; /* Hide table on small screens */
+  }
+
+  .card {
+    font-size: 0.9rem;
+  }
+
+  .card img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
